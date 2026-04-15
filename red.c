@@ -162,3 +162,69 @@ int main()
    printf("%d %d",lowest,highest);
    return 0;
 }
+
+#include <stdio.h>
+ 
+int main()
+{
+    long long int n;
+    long long int input;
+    long long int counteven=0;
+    long long int countodd=0;
+    long long int countpositive=0;
+    long long int countnegative=0;
+    scanf("%lld", &n);
+    for(long long int i=1;i<=n;i++){
+        scanf("%lld",&input);
+        if(input>0){
+            countpositive++;
+        }
+        if(input<0){
+            countnegative++;
+        }
+        if(input%2==0){
+            counteven++;
+        }
+        if(input%2==1 || input%2==-1 ){
+            countodd++;
+        }
+        
+    }
+    
+    printf("Even: %lld\n",counteven);
+    printf("Odd: %lld\n",countodd);
+    printf("Positive: %lld\n",countpositive);
+    printf("Negative: %lld", countnegative);
+ 
+    return 0;
+}
+
+
+#include <stdio.h>
+ 
+int main()
+{
+    long long int n;
+    int count=0;
+    scanf("%lld", &n);
+    for(long long int i=1;i<=n;i++){
+        
+        
+        
+        if(i%2==0){
+            printf("%lld\n",i);
+            count++;
+        }
+        
+       
+        
+        
+    }
+    
+     if(count==0){
+            printf("-1");
+            
+        }
+ 
+    return 0;
+}

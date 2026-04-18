@@ -228,3 +228,57 @@ int main()
  
     return 0;
 }
+
+
+#include <stdio.h>
+ 
+ 
+int main()
+{
+    
+    long long int password=1999;
+     
+    long long int x;
+   
+    while(scanf("%lld", &x)==1){
+        if(x==password){
+            printf("Correct");
+            break;
+        }
+        else{
+            printf("Wrong\n");
+        }
+    }
+ 
+    return 0;
+}
+
+
+#include <stdio.h>
+ 
+int main()
+{
+    long long int x;
+    long long int highest=0;
+    scanf("%lld", &x);
+   
+     
+     for(long long int i=1;i<=x;i++){
+       
+       
+       
+        long long int input;
+         
+         
+         scanf("%lld", &input);
+         
+         if(input>highest){
+             highest=input;
+         }
+         
+         
+     }
+     printf("%lld", highest);
+ 
+    return 0;
+}

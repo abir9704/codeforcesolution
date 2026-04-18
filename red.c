@@ -282,3 +282,21 @@ int main()
  
     return 0;
 }
+
+#include <stdio.h>
+
+int main()
+{
+    long long int x;
+    scanf("%d", &x);
+    
+    for(long long int i=1;i<=12;i++){
+        
+        long long result= x*i;
+        
+        printf("%d * %d = %d", result);
+        
+    }
+
+    return 0;
+}

@@ -300,3 +300,58 @@ int main()
 
     return 0;
 }
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int x;
+    scanf("%d", &x);
+    int numbers[x];
+    
+   
+     int z=0;
+    
+    for(int i=0;i<x;i++){
+        
+        scanf("%d", &numbers[i]);
+        
+       
+        
+      
+        
+    }
+    
+       for(int i = 0; i < x; i++) {
+        // printf("%d\n ", numbers[i]);
+        int divisor=1;
+        while(numbers[i]/divisor>=10){
+            
+            
+            divisor=divisor*10;
+            // printf("s=%d\n",numbers[i]);
+            // printf("vajok=%d\n",divisor);
+            
+        }
+        
+        // printf("divisor=%d\n",divisor);
+        
+        while(numbers[i]!=0){
+            int digit=numbers[i]/divisor;
+            
+              printf("%d ", digit);
+            // printf("condition=%d\n",numbers[i]);
+           
+          
+            
+             numbers[i]=numbers[i]%divisor;
+             divisor=divisor/10;
+            //  printf("next condition=%d", numbers[i]);
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}

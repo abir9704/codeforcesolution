@@ -355,3 +355,57 @@ int main()
 
     return 0;
 }
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int x;
+    scanf("%d", &x);
+    int numbers[x];
+    
+   
+     int z=0;
+    
+    for(int i=0;i<x;i++){
+        
+        scanf("%d", &numbers[i]);
+        
+       
+        
+      
+        
+    }
+    
+    int reminder;
+    
+       for(int i = 0; i < x; i++) {
+           int z=numbers[i];
+           
+           if(z==0){
+               printf("0\n");
+               continue;
+           }
+           
+           int first=1;
+        
+       while(z>0){
+        if(first==0) printf(" ");
+  
+        reminder=z%10;
+        printf("%d", reminder);
+        first=0;
+        z=z/10;
+       
+       
+        
+    }
+    
+    printf("\n");
+
+
+    
+}
+return 0;
+}

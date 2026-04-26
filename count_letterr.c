@@ -42,9 +42,26 @@ int main(){
        
     }
 
-     printf("%s",str);
+    //  printf("%s",str);
 
-    // printf("%s",str);
+    //  int count=0;
+int count =1;
+  
+ 
+     for(int i=0;i<len;i++){
+       if(str[i]!=str[i+1]){
+
+        
+
+       
+        
+         printf("%c : %d\n",str[i],count);
+         count=0;
+       }
+       count++;
+     }
+
+    // printf("%d",count);
 
     return 0;
 }
